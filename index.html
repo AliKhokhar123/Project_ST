@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="main.css"/>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="./src/pages/LandingPage/landingPage.css">
+    <link rel="stylesheet" href="./src/pages/VisitorHomePage/visitorHomePage.css">
+    <link rel="stylesheet" href="./src/pages/VisitorListing/visitorListing.css">
+    <link rel="stylesheet" href="./src/pages/VisitorFilters/visitorFilters.css">
+    <link rel="stylesheet" href="./src/pages/ArtistHomePage/artistHomePage.css">
+    <link rel="stylesheet" href="./src/pages/ArtistItems/artistItems.css">
+    <link rel="stylesheet" href="./src/pages/ArtistAddNewItem/artistAddNewItem.css">
+    <link rel="stylesheet" href="./src/pages/ArtistCaptureImagePopup/artistCaptureImagePopup.css">
+    <link rel="stylesheet" href="./src/pages/LiveAuction/liveAuction.css">
+</head>
+
+<body>
+<nav class="overflow-hidden">
+    <a href="#landingPage">Landing Page</a>
+    <a href="#visitorHomePage">Visitor Home Page</a>
+    <a href="#visitorListing">Visitor Listing</a>
+    <a href="#visitorFilters">Visitor Filters</a>
+    <a href="#artistHomePage">Artist Home Page</a>
+    <a href="#artistMenu">Artist Menu</a>
+    <a href="#artistItems">Artist Items</a>
+    <a href="#artistAddNewItemPage">Artist Add New Item Page</a>
+    <a href="#artistCaptureImagePopup"> Artist Capture Image Popup</a>
+    <a href="#liveAuction">Live Auction</a>
+</nav>
+
+<header id="header">This is my header</header>
+
+<hr/>
+<!-- Landing page -->
+
+<section class="page" id="landingPage">
+
+    <div class="top-box1">
+        <h1 class="top-heading1">Street ARTists</h1>
+    </div>
+    <div class="logo-box">
+        <img src="./img/Logo.png" alt="" class="logo">
+    </div>
+    <div class="main-box">
+
+        <div class="main-box1">
+            <h1 class="main-box-1-text" id="artist">Join as Artist</h1>
+            <img src="./img/Vector 1.png" alt="" class="vec1">
+            <div class="dropdown-box5">
+                <button class="choose-button" id="landing-drop"><h1 class="choose-text">Choose</h1>
+                    <ion-icon name="caret-down-outline" class="arrow-icon"></ion-icon>
+                </button>
+                <div class="dropdown-content5" id="artists">
+                    <!-- Опциите ќе се додадат динамички со JavaScript -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-box2">
+        <div class="main-box3">
+            <h1 class="main-box-3-text">Join as Visitor</h1>
+            <img src="./img/Vector 2.png" alt="" class="vec2">
+        </div>
+    </div>
+
+</section>
+
+<!-- visitorHomePage -->
+
+<section class="page" id="visitorHomePage">
+    <div class="top-box">
+        <div class="nav-box">
+            <img src="./img/Logo.png" alt="" class="main-logo">
+            <h1 class="text-1">Street ARTists</h1>
+        </div>
+        <div class="nav-icon-box"><img src="./img/auction-icon.png" alt="" class="auction-icon"></div>
+    </div>
+
+    <div class="brick">
+        <div class="brick-text-box">
+            <p class="brick-text">Looking for <br> masterpiece?</p>
+        </div>
+        <div class="brick-btn-box">
+            <button class="brick-btn">Find one now!</button>
+        </div>
+        <img src="./img/Bricks (1).png" alt="" class="brick-img">
+    </div>
+
+    <div class="scroller overflow-hidden" data-direction="left" data-speed="fast">
+        <div class="scroller__inner" id="img_container">
+            <img src="./img/2.png" alt=""/>
+            <img src="./img/2.png" alt=""/>
+            <img src="./img/2.png" alt=""/>
+            <img src="./img/2.png" alt=""/>
+            <img src="./img/2.png" alt=""/>
+            <img src="./img/2.png" alt=""/>
+        </div>
+    </div>
+
+
+    <div class="scroller overflow-hidden" data-direction="right" data-speed="fast">
+        <div class="scroller__inner" id="img_container2">
+            <img src="./img/5.png" alt=""/>
+            <img src="./img/5.png" alt=""/>
+            <img src="./img/5.png" alt=""/>
+            <img src="./img/5.png" alt=""/>
+            <img src="./img/5.png" alt=""/>
+            <img src="./img/5.png" alt=""/>
+        </div>
+    </div>
+
+
+    <br><br>
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="main-carousel d-flex">
+                    <div class="main1">
+                        <div class="text-box">
+                            <img src="./img/Ellipse 1.png" alt="" class="profile">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                                venenatis.</p></div>
+                    </div>
+                    <div class="main2">
+                        <div class="text-box2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="main-carousel d-flex">
+                    <div class="main1">
+                        <div class="text-box">
+                            <img src="./img/Ellipse 1.png" alt="" class="profile">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                                venenatis.</p></div>
+                    </div>
+                    <div class="main2">
+                        <div class="text-box2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="main-carousel d-flex">
+                    <div class="main1">
+                        <div class="text-box">
+                            <img src="./img/Ellipse 1.png" alt="" class="profile">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                                venenatis.</p></div>
+                    </div>
+                    <div class="main2">
+                        <div class="text-box2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                            purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+            <span class="carousel-control" aria-hidden="true"><img src="./img/arrow-left.png" alt=""
+                                                                   width="13px"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+            <span class="carousel-control" aria-hidden="true"><img src="./img/arrow-right.png" alt=""
+                                                                   width="13px"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</section>
+
+<!-- visitorListing -->
+
+<section class="page" id="visitorListing">
+    <div id="vistorListingCardContainer">
+        <div class="top-box">
+            <div class="nav-box">
+                <img src="./img/Logo.png" alt="" class="main-logo">
+                <h1 class="text-1">Street ARTists</h1>
+            </div>
+            <div class="nav-icon-box"><img src="./img/auction-icon.png" alt="" class="auction-icon"></div>
+        </div>
+        <br>
+
+        <div id="main_card">
+
+        </div>
+
+        <!-- <br>
+        
+            <div class="container-fluid p-0 m-0 card-bg1">
+                <div class="pic">
+                    <img src="./img/unsplash_2.png" alt="" class="card_img">
+                </div>
+                <div class="title-box d-flex justify-content-between">
+                    <div class="title">
+                        <p class="title-text1">Artist Name</p>
+                    </div>
+                    <div class="price">
+                        <button class="price-btn1">$500</button>
+                    </div>
+                </div>
+                <div class="description1">
+                    <p class="item-title1">Item title</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor...</p>
+                </div>
+                
+            </div>
+        
+        <br>
+        
+            <div class="container-fluid p-0 m-0 card-bg">
+                <div class="pic">
+                    <img src="./img/card-img.png" alt="" class="card_img">
+                </div>
+                <div class="title-box d-flex justify-content-between">
+                    <div class="title">
+                        <p class="title-text">Artist Name</p>
+                    </div>
+                    <div class="price">
+                        <button class="price-btn">$500</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <p class="item-title">Item title</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor...</p>
+                </div>
+                
+            </div> -->
+
+
+        <img src="./img/Group 14.png" alt="" width="65px" class="filter-btn" id="filter-btn">
+    </div>
+    <!-- <div class="top-box">
+      <div class="nav-box">
+      <img src="./img/Logo.png" alt="" class="main-logo">
+      <h1 class="text-1">Street ARTists</h1>
+      </div>
+      <div class="nav-icon-box"><img src="./img/auction-icon.png" alt="" class="auction-icon"></div>
+  </div>
+  <br>
+  <div class="container-fluid p-0 m-0 card-bg">
+      <div class="pic">
+          <img src="./img/card-img.png" alt="" class="card_img">
+      </div>
+      <div class="title-box d-flex justify-content-between">
+          <div class="title">
+              <p class="title-text">Artist Name</p>
+          </div>
+          <div class="price">
+              <button class="price-btn">$500</button>
+          </div>
+      </div>
+      <div class="description">
+          <p class="item-title">Item title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor...</p>
+      </div>
+
+  </div>
+
+<br>
+
+  <div class="container-fluid p-0 m-0 card-bg1">
+      <div class="pic">
+          <img src="./img/unsplash_2.png" alt="" class="card_img">
+      </div>
+      <div class="title-box d-flex justify-content-between">
+          <div class="title">
+              <p class="title-text1">Artist Name</p>
+          </div>
+          <div class="price">
+              <button class="price-btn1">$500</button>
+          </div>
+      </div>
+      <div class="description1">
+          <p class="item-title1">Item title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor...</p>
+      </div>
+
+  </div>
+
+<br>
+
+  <div class="container-fluid p-0 m-0 card-bg">
+      <div class="pic">
+          <img src="./img/card-img.png" alt="" class="card_img">
+      </div>
+      <div class="title-box d-flex justify-content-between">
+          <div class="title">
+              <p class="title-text">Artist Name</p>
+          </div>
+          <div class="price">
+              <button class="price-btn">$500</button>
+          </div>
+      </div>
+      <div class="description">
+          <p class="item-title">Item title</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor...</p>
+      </div>
+
+  </div>
+
+
+      <img src="./img/Group 14.png" alt="" width="65px" class="filter-btn" id="filter-btn">  -->
+</section>
+
+<!-- VisitorFilters -->
+
+<section class="page" id="visitorFilters">
+    <div class="top-box">
+        <div class="nav-box">
+            <img src="./img/Logo.png" alt="" class="main-logo">
+            <h1 class="text-1">Street ARTists</h1>
+        </div>
+        <div class="nav-icon-box"><img src="./img/auction-icon.png" alt="" class="auction-icon"></div>
+    </div>
+    <br>
+    <section class="section1">
+        <div class="container-fluid p-0 d-flex justify-content-between align-items-center">
+            <h1 class="filter-by">Filter by</h1>
+            <img src="./img/cross.png" alt="" class="cross">
+        </div>
+
+        <div class="new-box1">
+            <p>By Item Title</p>
+            <input type="text" id="byItemTitle" placeholder="Label">
+            <div class="line"></div>
+        </div>
+        <br>
+        <div class="new-box1">
+            <p>By Artist</p>
+            <div class="drop-box">
+                <button class="choose-btn" id="byartist"><p id="choose">Choose</p> <span><ion-icon
+                        name="caret-down-outline" class="choose-icon"></ion-icon></span></button>
+                <div class="dropdown-content" id="byArtist">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <br>
+        <div class="new-box1">
+            <p>By price</p>
+            <div class="input2 d-flex justify-content-between">
+                <div class="input22" style="opacity: 0.7;">
+                    Min: <input id="byPriceMin" type="text" placeholder="Label">
+                </div>
+                <div class="input33" style="opacity: 0.7;">
+                    Max: <input id="byPriceMax" type="text" placeholder="Label">
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <br>
+        <div class="new-box1">
+            <p>By type</p>
+            <div class="drop-box1">
+                <button class="choose-btn1" id="byartist1"><p id="choose1">Choose</p> <span><ion-icon
+                        name="caret-down-outline" class="choose-icon1"></ion-icon></span></button>
+                <div class="dropdown-content1" id="byType">
+
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+
+    </section>
+    <br><br><br><br>
+
+    <img src="./img/tick.png" alt="" width="65px" class="filter-btn" id="tick">
+</section>
+
+<!-- Artist Home Page -->
+<!-- Artist Home Page -->
+
+<section class="page" id="artistHomePage">
+    <div class="top-box">
+        <div class="nav-box">
+            <img src="./img/Logo.png" alt="" class="main-logo">
+            <h1 class="text-1 currentArtist"></h1>
+        </div>
+        <div class="nav-icon-box">
+            <ion-icon name="menu-outline" class="nav-icon" id="menuIcon"></ion-icon>
+        </div>
+        <div class="dropdown-menu text-center" id="dropdownMenu">
+            <a href="#artistHomePage" >HOME</a>
+            <a href="#artistItems" >ITEMS</a>
+            <a href="#liveAuction">AUCTION</a>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-color">
+        <div class="row pt-4 justify-content-evenly">
+            <div class="col-5 text-center box-1" style="width: 43.5%;">
+                <p>Total Items Sold</p>
+                <h1 id="totalItems">12/35</h1>
+            </div>
+            <div class="col-5 text-center box-2" style="width: 43%;">
+                <p>Total Income</p>
+                <h1 id="totalIncome">$1700</h1>
+            </div>
+        </div>
+        <div class="row pt-3 justify-content-center">
+            <div class="box-3 col-11" id="liveAuctionInfo">
+                <!-- Live auction information will be dynamically inserted here -->
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="container-fluid sec-2-bg">
+        <div class="row pt-4">
+            <div class="col-12">
+                <h1 class="sec-2-text-1">Display my income for last</h1>
+            </div>
+        </div>
+        <div class="row justify-content-evenly row1">
+            <div class="col-4">
+                <button class="btn1" id="chart7Days">7 days</button>
+            </div>
+            <div class="col-4">
+                <button class="btn2"  id="chart14Days">14 days</button>
+            </div>
+            <div class="col-4">
+                <button class="btn3"  id="chart30Days">30 days</button>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="container-fluid d-flex flex-column justify-content-center">
+            <canvas id="myChart" style="width:95%;height: 100%; min-height: 300px; max-width: 95%;"></canvas>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Artist-Menu -->
+
+<section class="page" id="artistMenu">
+    <div class="top-box">
+        <div class="nav-box">
+            <img src="./img/Logo.png" alt="" class="main-logo">
+            <h1 class="text-1 currentArtist"></h1>
+        </div>
+        <div class="nav-icon-box border border-1">
+            <ion-icon name="menu-outline" class="nav-icon" id="menuIcon1"></ion-icon>
+        </div>
+        <div class="dropdown-menu text-center" id="dropdownMenu1">
+            <a href="#artistHomePage" >HOME</a>
+            <a href="#artistItems">ITEMS</a>
+            <a href="#liveAuction">AUCTION</a>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-color">
+        <div class="row pt-4 justify-content-evenly">
+            <div class="col-5 text-center box-1">
+                <p>Total Items Sold</p>
+                <h1>12/35</h1>
+            </div>
+            <div class="col-5 text-center box-2">
+                <p>Total Income</p>
+                <h1>$1700</h1>
+            </div>
+        </div>
+        <div class="row pt-3 justify-content-center">
+            <div class="box-3 col-11">
+                <h5>Live Auctioning Item</h5>
+                <h1>$1200</h1>
+                <p>current bid</p>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="container-fluid sec-2-bg">
+        <div class="row pt-4">
+            <div class="col-12">
+                <h1 class="sec-2-text-1">Display my income for last</h1>
+            </div>
+        </div>
+        <div class="row justify-content-evenly row1">
+            <div class="col-4">
+                <button class="btn1">7 days</button>
+            </div>
+            <div class="col-4">
+                <button class="btn2">14 days</button>
+            </div>
+            <div class="col-4">
+                <button class="btn3">30 days</button>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="container-fluid d-flex flex-column justify-content-center">
+            <div class="chart">
+                <div class="counting">
+                    <h5 class="counting-11">01</h5>
+                    <h5 class="counting-1">02</h5>
+                    <h5 class="counting-1">03</h5>
+                    <h5 class="counting-1">04</h5>
+                    <h5 class="counting-1">05</h5>
+                    <h5 class="counting-1">06</h5>
+                    <h5 class="counting-1">07</h5>
+                    <h5 class="counting-1">08</h5>
+                    <h5 class="counting-1">09</h5>
+                    <h5 class="counting-1">10</h5>
+                    <h5 class="counting-1">11</h5>
+                    <h5 class="counting-1">12</h5>
+                    <h5 class="counting-1">13</h5>
+                    <h5 class="counting-1">14</h5>
+                </div>
+                <div class="lvl1 lvl d-flex align-items-center">
+                    <div class="info">
+                        <div class="row p-1">
+                            <div class="col-12"><p class="info-text">02</p></div>
+                            <div class="col-12"><p class="info-text">Amount 59</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lvl2 lvl"></div>
+                <div class="lvl3 lvl"></div>
+                <div class="lvl4 lvl"></div>
+                <div class="lvl5 lvl"></div>
+                <div class="lvl6 lvl"></div>
+                <div class="lvl7 lvl"></div>
+                <div class="lvl8 lvl"></div>
+                <div class="lvl9 lvl"></div>
+                <div class="lvl10 lvl"></div>
+                <div class="lvl11 lvl"></div>
+                <div class="lvl12 lvl"></div>
+                <div class="lvl13 lvl"></div>
+                <div class="lvl14 lvl"></div>
+            </div>
+            <div class="counting2 row justify-content-between d-flex">
+                <div class="col-1 counting11">10</div>
+                <div class="col-1 counting1">20</div>
+                <div class="col-1 counting1">30</div>
+                <div class="col-1 counting1">40</div>
+                <div class="col-1 counting1">50</div>
+                <div class="col-1 counting1">60</div>
+                <div class="col-1 counting1">70</div>
+                <div class="col-1 counting1">80</div>
+                <div class="col-1 counting1">90</div>
+
+            </div>
+        </div>
+</section>
+
+<!-- ArtistItems -->
+
+<section class="page" id="artistItems">
+    <div class="top-box">
+        <div class="nav-box">
+            <img src="./img/Logo.png" alt="" class="main-logo">
+            <h1 class="text-1 currentArtist"></h1>
+        </div>
+        <div class="nav-icon-box">
+            <ion-icon name="menu-outline" class="nav-icon" id="menuIcon2"></ion-icon>
+        </div>
+        <div class="dropdown-menu text-center" id="dropdownMenu2">
+            <a href="#artistHomePage" >HOME</a>
+            <a href="#artistItems" >ITEMS</a>
+            <a href="#liveAuction" >AUCTION</a>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid second-box">
+        <div class="add-item-box">
+            <p>+ Add new item</p>
+        </div>
+    </div>
+    <br>
+    <div id="content-container" class="container-fluid p-0 m-0 card-bg">
+        <!-- Content will be dynamically added here -->
+    </div>
+    <!-- <div class="container-fluid p-0 m-0 card-bg">
+        <div class="pic">
+            <img src="./img/card-img.png" alt="" class="card_img">
+        </div>
+        <div class="title-box d-flex justify-content-between">
+            <div class="title">
+                <p class="title-text">Item title</p>
+                <p class="date">15.10.2021</p>
+            </div>
+            <div class="price">
+                <button class="price-btn">$500</button>
+            </div>
+        </div>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                lectus magna fringilla urna, porttitor rhoncus dolor...</p>
+        </div>
+        <div class="buttons">
+            <button class="card-btn">Send to Auction</button>
+            <button class="card-btn1">Unpublish</button>
+            <button class="card-btn2">Remove</button>
+            <button class="card-btn3">Edit</button>
+        </div>
+    </div> -->
+    <!-- <br> -->
+    <!-- <div class="container-fluid p-0 m-0 card-bg">
+        <div class="pic">
+            <img src="./img/card-img.png" alt="" class="card_img">
+        </div>
+        <div class="title-box d-flex justify-content-between">
+            <div class="title">
+                <p class="title-text">Item title</p>
+                <p class="date">15.10.2021</p>
+            </div>
+            <div class="price">
+                <button class="price-btn">$500</button>
+            </div>
+        </div>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                lectus magna fringilla urna, porttitor rhoncus dolor...</p>
+        </div>
+        <div class="buttons">
+            <button class="card-btn">Send to Auction</button>
+            <button class="card-btn1">Unpublish</button>
+            <button class="card-btn2">Remove</button>
+            <button class="card-btn3">Edit</button>
+        </div>
+    </div> -->
+</section>
+
+<!-- Artist Add New Item Page -->
+
+<section class="page" id="artistAddNewItemPage">
+    <div class="top-box">
+        <div class="nav-box">
+            <img src="./img/Logo.png" alt="" class="main-logo">
+            <h1 class="text-1 currentArtist"></h1>
+        </div>
+        <div class="nav-icon-box">
+            <ion-icon name="menu-outline" class="nav-icon" id="menuIcon3"></ion-icon>
+        </div>
+        <div class="dropdown-menu text-center" id="dropdownMenu3">
+            <a href="#artistHomePage">HOME</a>
+            <a href="#artistItems">ITEMS</a>
+            <a href="#liveAuction">AUCTION</a>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid form-heading-box d-flex align-items-center justify-content-between">
+        <p class="form-text-1">Add new Item</p>
+        <p class="form-text-2">Is published &nbsp; <span><input type="checkbox" id="isPublishedCheckbox"></input></span></p>
+    </div>
+    <br>
+    <div class="container-fluid p-0 overflow-hidden">
+        <div class="row input-box-1">
+            <div class="col-12"><p class="title-label">Title</p></div>
+            <div class="col-12 input-box-col">
+                <input type="text" id="add_title" class="input1" required>
+            </div>
+        </div>
+        <br>
+        <div class="row input-box-1">
+            <div class="col-12"><p class="title-label">Description</p></div>
+            <div class="col-12 input-box-col">
+                <textarea required id="add_description" name="w3review" rows="4" cols="50" class="input23"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row input-box-1">
+            <div class="col-6">
+                <div class="col-12"><p class="title-label">Type</p></div>
+                <div class="col-12 input-box-col">
+                    <input type="text" id="add_type" class="input1" required>
+                </div>
+            </div>
+            <div class="col-6">
+
+                <div class="col-12"><p class="title-label">Price</p></div>
+                <div class="col-12 input-box-col">
+                    <input type="text" id="add_price" class="input1" required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row input-box-1">
+            <div class="col-12"><p class="title-label">Image URL</p></div>
+            <div class="col-12 input-box-col">
+                <input type="text" id="add_img_url" class="input1" required>
+            </div>
+        </div>
+
+        <div class="container text-center"><p class="or-text">or</p></div>
+        <div class="main_snapshot">
+            <div class="snap-box d-flex justify-content-center align-items-center">
+                <div class="main text-center">
+                    <img src="./img/camera.png" alt="" width="67" id="cam">
+                    <p class="snapshot">Take a snapshot</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row last_btn_box d-flex mt-3 justify-content-between">
+            <div class="col-6">
+                <button class="add_item" id="add_new_item_btn">Add New Item</button>
+            </div>
+            <div class="col-6">
+                <button class="cancel_item" id="item2">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <br>
+</section>
+
+<!-- Artist Capture Image Popup -->
+
+<section class="page" id="artistCaptureImagePopup">
+    <!-- this should be implemented in the Artist Capture Image Popup  from hire  -->
+    Artists Capture Camera
+
+
+    <!-- to there -->
+    <div class="top-box">
+        <div class="nav-box">
+            <img src="./img/Logo.png" alt="" class="main-logo">
+            <h1 class="text-1 currentArtist"></h1>
+        </div>
+        <div class="nav-icon-box">
+            <ion-icon name="menu-outline" class="nav-icon" id="menuIcon4"></ion-icon>
+        </div>
+        <div class="dropdown-menu text-center" id="dropdownMenu4">
+            <a href="#artistHomePage" >HOME</a>
+            <a href="#artistItems" >ITEMS</a>
+            <a href="#liveAuction" >AUCTION</a>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-fluid d-flex justify-content-center p-0">
+        <div class="img-box">
+            <img id="capturedImage" style="width: 100%;"/>
+            <video id="liveStream" autoplay style="width: 100%;"></video>
+            <canvas id="captureCanvas" style="display: none;"></canvas>
+        </div>
+    </div>
+    <br>
+    <div class="container justify-content-center text-center">
+        <img src="./img/camera.png" alt="" width="67" id="cam2" class="captureImageBtn1" style="cursor: pointer;">
+    </div>
+    <br>
+</section>
+
+<!-- Live Auction Page -->
+
+
+<!-- Live Auction Page -->
+<section class="page" id="liveAuction">
+    <!-- this should be implemented in the Live auctionPage   from hire  -->
+    Auction Page
+
+    <div>Image on Acution</div>
+
+    <!-- to there -->
+    <div class="top-box">
+        <div class="nav-box">
+            <img src="./img/Logo.png" alt="" class="main-logo">
+            <h1 class="text-1">Street ARTists</h1>
+        </div>
+        <div class="nav-icon-box"><img src="./img/auction-icon.png" alt="" class="auction-icon"></div>
+    </div>
+    <br>
+    <section class="section2">
+        <div class="auction-box1 d-flex justify-content-between align-items-center">
+            <div class="auc-sec1">
+                <h1 class="aution-heading">Hey Marvin</h1>
+                <p class="bid-para">Let's Make a bid</p>
+            </div>
+            <div class="auc-sec2">
+                <ion-icon name="notifications-outline" class="bell-icon"></ion-icon>
+            </div>
+        </div>
+        <br>
+        <div class="search-box">
+            <input type="text" class="search-inp" placeholder="&#xF002; Search">
+        </div>
+
+        <div id="liveAuction"></div>
+
+    </section>
+</section>
+
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+      $("#menuIcon").click(function () {
+        console.log("ON CLICKED !!");
+        $("#dropdownMenu").slideToggle();
+      });
+  
+      $("#dropdownMenu a").click(function () {
+        // Close the dropdown after selecting an item
+        $("#dropdownMenu").slideUp();
+      });
+    });
+  
+    $(document).ready(function () {
+      $("#menuIcon1").click(function () {
+        console.log("ON CLICKED !!");
+        $("#dropdownMenu1").slideToggle();
+      });
+  
+      $("#dropdownMenu1 a").click(function () {
+        // Close the dropdown after selecting an item
+        $("#dropdownMenu1").slideUp();
+      });
+    });
+  
+    $(document).ready(function () {
+      $("#menuIcon2").click(function () {
+        console.log("ON CLICKED !!");
+        $("#dropdownMenu2").slideToggle();
+      });
+  
+      $("#dropdownMenu2 a").click(function () {
+        // Close the dropdown after selecting an item
+        $("#dropdownMenu2").slideUp();
+      });
+    });
+  
+    $(document).ready(function () {
+      $("#menuIcon3").click(function () {
+        console.log("ON CLICKED !!");
+        $("#dropdownMenu3").slideToggle();
+      });
+  
+      $("#dropdownMenu3 a").click(function () {
+        // Close the dropdown after selecting an item
+        $("#dropdownMenu3").slideUp();
+      });
+    });
+  
+    $(document).ready(function () {
+      $("#menuIcon4").click(function () {
+        console.log("ON CLICKED !!");
+        $("#dropdownMenu4").slideToggle();
+      });
+  
+      $("#dropdownMenu4 a").click(function () {
+        // Close the dropdown after selecting an item
+        $("#dropdownMenu4").slideUp();
+      });
+    });
+  </script>
+  

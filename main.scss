@@ -1,0 +1,23 @@
+// @import "./src/pages/LandingPage/landingPage.scss";
+// @import "./src/pages/VisitorListing/visitorListing.scss";
+// @import "./src/pages/VisitorListing/artistHomePage.scss";
+
+@import "./src/pages/LandingPage/landingPage.scss";
+
+@import "./src/pages/VisitorListing/visitorListing.scss";
+@import "./src/pages/VisitorHomePage/visitorHomePage.scss";
+@import "./src/pages/VisitorFilters/visitorFilters.scss";
+@import "./src/pages/ArtistHomePage/artistHomePage.scss";
+@import "./src/pages/ArtistMenu/artistMenu.scss";
+@import "./src/pages/ArtistItems/artistItems.scss";
+@import "./src/pages/ArtistAddNewItem/artistAddNewItem.scss";
+@import "./src/pages/ArtistCaptureImagePopup/artistCaptureImagePopup.scss";
+@import "./src/pages/LiveAuction/liveAuction.scss";
+
+.page {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}

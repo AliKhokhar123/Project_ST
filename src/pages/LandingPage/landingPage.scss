@@ -1,0 +1,170 @@
+@font-face {
+    font-family: ReenieBeanie;
+    src: url(../../fonts/ReenieBeanie-Regular.ttf);
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url(../../fonts/Roboto-Regular.ttf);
+  }
+  body {
+    background-color: #FCEBD5;
+  }
+  
+  .top-box1 {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .top-heading1 {
+    font-family: ReenieBeanie;
+    font-size: 34px;
+    color: #A16A5E;
+  }
+  
+  .logo-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .main-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .main-box2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: all linear 0.3s;
+  }
+  
+  .main-box-1-text {
+    font-size: 45px;
+    color: #A16A5E;
+    font-family: ReenieBeanie;
+    margin-top: -150px;
+    position: absolute;
+    width: 100%;
+    padding-left: 20px;
+    height: 100px;
+    z-index: 999;
+  }
+  
+  .main-box3 {
+    margin-top: -231px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all linear 0.3s;
+  }
+  
+  .main-box-3-text {
+    font-size: 45px;
+    position: absolute;
+    color: #FCEBD5;
+    font-family: ReenieBeanie;
+    z-index: 99;
+    margin-top: 160px;
+  }
+  
+  .choose-button {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #A16A5E;
+    background-color: #EDD5BB;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 120px;
+  }
+  
+  .choose-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: #A16A5E;
+    margin-top: 8px;
+    font-family: Roboto;
+  }
+  
+  .arrow-icon {
+    color: #A16A5E;
+  }
+  
+  .vec1 {
+    width: 260px;
+    transition: all linear 0.3s;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .vec2 {
+    width: 260px;
+    transition: all linear 0.3s;
+    position: relative;
+    cursor: pointer;
+    z-index: -999;
+  }
+  
+  .vec1.active {
+    width: 290px;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.2509803922));
+    margin-bottom: -10px;
+  }
+  
+  .vec2.active {
+    width: 290px;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.2509803922));
+    margin-top: -10px;
+  }
+  
+  .dropdown-content5{
+    display: none;
+    position: absolute;
+    left: 120px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    top: 30px;
+    width: 200px;
+  }
+  .dropdown-content5 button {
+    color: #EDD5BB;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    text-align: left;
+    border: 1px solid #A16A5E;
+    background-color: #A16A5E;
+    padding: 5px;
+  }
+  .dropdown-content5 button:hover {
+    background-color: #EDD5BB;
+    color: #A16A5E;
+    border: 1px solid #A16A5E;
+  }
+  
+  .dropdown-box5 {
+    position: relative;
+    z-index: 999;
+    top: -140px;
+    height: 70px;
+  }
